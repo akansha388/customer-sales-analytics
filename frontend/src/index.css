@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Times New Roman", Times, serif;
+  --font-sans: "Times New Roman", Times, serif;
+  
+  --color-ivory: #F7F5F0;
+  --color-charcoal: #292C2B;
+  --color-forest: #526B58;
+  --color-olive: #8A9271;
+  --color-burgundy: #895B60;
+  --color-beige: #E9E2D6;
+  --color-slate: #777B78;
+}
+
+body {
+  font-family: var(--font-serif);
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+}

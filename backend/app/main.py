@@ -1,25 +1,20 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.core.database import Base, engine
-from app.models import analytics_models  # Import models to register tables
+from app.api.endpoints import dashboard
 
-# Create tables in Docker PostgreSQL database
-Base.metadata.create_all(bind=engine)
+app = FastAPI(title="Customer & Sales Analytics API")
 
-app = FastAPI(
-    title="Customer & Sales Analytics API",
-    version="1.0.0",
-    description="Business Intelligence and Analytics REST API"
-)
-
+# Enable CORS for React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["Dashboard"])
+
 @app.get("/")
-def root():
+def read_root():
     return {"status": "online", "database": "PostgreSQL connected"}
