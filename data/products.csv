@@ -1,0 +1,10 @@
+id,product_code,name,category,unit_price,unit_cost
+cbf3e345-fe59-463e-8740-a4aef117a187,PROD-101,Laptop Pro,Electronics,1200,800
+269d3622-1038-41fe-9e5d-315b9e7121b0,PROD-102,Wireless Headphones,Electronics,150,70
+fbac6d09-5299-43b5-90ae-7787fc248bc2,PROD-103,Smartwatch,Electronics,250,120
+78b4247b-30ae-4dc8-8158-5bd2865aabaf,PROD-104,Leather Jacket,Apparel,200,90
+21848c5e-ea64-4f62-b45b-d77dd9149407,PROD-105,Running Shoes,Apparel,110,45
+3ddca969-7632-4571-9574-c0e317819367,PROD-106,Denim Jeans,Apparel,80,30
+dadd129a-b601-45f4-94a5-9abff83aab75,PROD-107,Espresso Machine,Home & Kitchen,450,220
+59980d93-a5e1-41bc-83fc-c66cf028fbec,PROD-108,Blender,Home & Kitchen,90,40
+baf6ae6a-74ae-4ad1-98a7-4d1e077a17ee,PROD-109,Air Fryer,Home & Kitchen,130,60
